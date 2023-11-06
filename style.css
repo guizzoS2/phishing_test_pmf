@@ -1,0 +1,179 @@
+:root {
+    --cor-azul: #007CC3 ;
+    --cor-branco-fundo: #F6F6F6;
+    --cor-hover: #3F9CD2;
+}
+
+p, th, td, div, select, input[type="text"], input[type="password"], textarea, button, label {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+.form .ZLoginButton {
+    background-color: var(--cor-azul);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: right;
+    font-size: 1em;
+    float: right;
+
+
+}
+
+.form input[type="submit"]:hover{
+    background-color: var(--cor-hover);
+    color: black;
+}
+
+.DwtButton {
+    height: 22px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.form input[type="text"], .form input[type="password"] {
+    border: 1px solid white;
+    padding: 0;
+    width: 235px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.form hr {
+    border-color: transparent;
+    border-bottom: solid 1px white;
+    height: 0;
+}
+
+body {
+    background-color: var(--cor-branco-fundo);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+form {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    border-width: 0;
+    padding: 0;
+}
+
+.form td {
+    padding-bottom: 10px;
+}
+
+table {
+    border-spacing: 0;
+    border-width: 0;
+}
+
+.center {
+    left: 50%;
+    overflow: visible;
+    position: absolute;
+    top: 40%;
+    z-index: 11;
+    margin-top: -160px;
+    margin-left: -250px;
+
+}
+
+h1 {
+    margin: 0 30px 30px;
+    overflow: hidden;
+}
+
+.contentBox {
+    min-height: 265px;
+    padding: 10px 0 40px;
+    border-radius: 3px;
+    width: 500px;
+    background-color: var(--cor-azul);
+}
+
+.ImgLoginBanner{
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-image: url(LoginBanner_white.png);
+    width: 440px;
+    height: 60px;
+}
+
+.oque {
+    color: white;
+    font-size: .9em;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.oque:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.form select {
+    height: 20px;
+    width: 165px;
+}
+
+.form td:first-child label {
+    margin-right: 20px;
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.legalN {
+    cursor: default;
+    margin-bottom: 5px;
+    font: 1rem;
+    color: #656565;
+    text-decoration: none;
+}
+
+.legalN a:hover {
+    text-decoration: underline;
+}
+
+.legalN a, .legalN a:visited{
+    cursor: default;
+    color: #656565;
+    text-decoration: none;
+}
+
+.copy {
+    margin-bottom: 5px;
+    font: 1rem;
+    color: #656565;
+}
