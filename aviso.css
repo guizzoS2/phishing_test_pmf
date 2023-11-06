@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(87, 87, 87);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto {
+    background-color: white;
+    font-size: large;
+    width: 60em;
+    height: 7em;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dados {
+    background-color: white;
+    border: solid 1px blue;
+    width: 30em;
+    height: 20em;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#title {
+    font-size: xx-large;
+    color: white;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.alerta {
+    height: 50px;
+    width: 50px;
+}
