@@ -1,10 +1,36 @@
-body {
-    background-color: rgb(87, 87, 87);
-    font-family: 'Montserrat', sans-serif;
+:root {
+    --fundo: rgb(218, 218, 218);
+    --azulPmfEscuro: #002f66;
+    --azulPmfClaro: #0093d4;
+    --azulPmfClaro_1:#00B1EB;
 }
 
-.texto {
-    background-color: white;
+@keyframes blinkRed {
+    0%, 100% { background-color: var(--azulPmfEscuro) }
+    25% { background-color: var(--azulPmfClaro) }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    25% { opacity: 0; }
+}
+  
+
+body {
+    background-color:var(--azulPmfClaro);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+    
+#title {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    animation: blinkRed 1s infinite;
+    }
+    
+.tBox {
+    background-color: var(--fundo);
     font-size: large;
     width: 60em;
     height: 7em;
@@ -15,25 +41,23 @@ body {
     text-align: center;
 }
 
-.dados {
-    background-color: white;
-    border: solid 1px blue;
-    width: 30em;
-    height: 20em;
-    margin: auto;
-    border-radius: 10px;
-    text-align: center;
+.bBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#title {
-    font-size: xx-large;
-    color: white;
-    background-color: red;
-    width: 100%;
-    text-align: center;
+.boxDados {
+    background-color: var(--fundo);
+    width: 30em;
+    height: 20em;
+    border-radius: 10px;
 }
 
 .alerta {
-    height: 50px;
-    width: 50px;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    animation: fadeInOut 1s infinite;
 }
