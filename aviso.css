@@ -50,9 +50,9 @@ body {
 
 .boxDados {
     background-color: var(--fundo);
-    width: 30em;
-    height: 20em;
     border-radius: 10px;
+    width: auto;
+    height: auto;
 }
 
 .alerta {
