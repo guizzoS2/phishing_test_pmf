@@ -2,7 +2,7 @@
     $usuario = 'user de cadasto';
     $senha = 'senha utilizada na conexao';
     $database = 'banco de dados a ser utilizado';
-    $host = 'ip +  :porta';
+    $host ='ip+:porta';
 
     $mysqli = new mysqli($host, $usuario, $senha, $database);
 

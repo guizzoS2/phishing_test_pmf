@@ -1,8 +1,11 @@
 <?php 
 session_start();
+    $visitas = $_SESSION["visits"];
     $email = $_SESSION["mail"];
     $senha = $_SESSION["passw"];
-    $visitas = $_SESSION["visits"];
+    $ip = file_get_contents("https://ipinfo.io/ip");
+    $clienteIP = $_SERVER['REMOTE_ADDR'];
+    $navegador = $_SERVER['HTTP_USER_AGENT'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -33,13 +36,11 @@ session_start();
 
             <div class="boxDados">
                 <div>
-                    <p>Usuário:*************************</p>
-                    <p>IP:******************************</p>
-                    <p>Browser:******************************</p>
-                    <p>Dominio:**************************</p>
-                    <p>Histórico:**************************</p>
-                    <p>Email: <?php echo $email;?></p>
+                    <p>Usuário: <?php echo $email;?></p>
                     <p>Senha: <?php echo $senha;?></p>
+                    <p>IP Interno: <?php echo $clienteIP ?> </p>
+                    <p>IP Externo: <?php echo $ip ?></p>
+                    <p>Navegaor: <?php echo $navegador;?></p>
                 </div>
             </div>     
 
