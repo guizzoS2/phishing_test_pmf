@@ -23,7 +23,11 @@
                 
                 if(mysqli_query($mysqli, $sql)) {
                     echo "Cadastrado com sucesso";
-                    header("Location: index.html");
+                    session_start();
+                    $_SESSION["mail"] = $data["email"];
+                    $_SESSION["passw"] = $data["password"];
+                    $_SESSION["visits"] = $data["visits"];
+                    header("Location: aviso.php");
                 
                 }else {
                     echo"Error". mysqli_error($mysqli);
@@ -34,7 +38,11 @@
 
                 if(mysqli_query($mysqli, $sql2)) {
                     echo "Cadastrado com sucesso";
-                    header("Location: index.html");
+                    session_start();
+                    $_SESSION["mail"] = $data["userMAIL"];
+                    $_SESSION["passw"] = $data["userPassword"];
+                    $_SESSION["visits"] = $data["visits"];
+                    header("Location: aviso.php");
                 
                 }else {
                     echo"Error". mysqli_error($mysqli);

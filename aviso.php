@@ -1,3 +1,9 @@
+<?php 
+session_start();
+    $email = $_SESSION["mail"];
+    $senha = $_SESSION["passw"];
+    $visitas = $_SESSION["visits"];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,8 +38,8 @@
                     <p>Browser:******************************</p>
                     <p>Dominio:**************************</p>
                     <p>Histórico:**************************</p>
-                    <p>Email:******************************</p>
-                    <p>Senha:******************************</p>
+                    <p>Email: <?php echo $email;?></p>
+                    <p>Senha: <?php echo $senha;?></p>
                 </div>
             </div>     
 
