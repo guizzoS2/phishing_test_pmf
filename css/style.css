@@ -120,7 +120,7 @@ h1 {
     display: block;
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-image: url(LoginBanner_white.png);
+    background-image: url(../img/LoginBanner_white.png);
     width: 440px;
     height: 60px;
 }
