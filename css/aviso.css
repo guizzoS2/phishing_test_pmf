@@ -3,11 +3,12 @@
     --azulPmfEscuro: #002f66;
     --azulPmfClaro: #0093d4;
     --azulPmfClaro_1:#00B1EB;
+    --brancoPmf: #ffffff;
 }
 
 @keyframes blinkRed {
-    0%, 100% { background-color: var(--azulPmfEscuro) }
-    25% { background-color: var(--azulPmfClaro) }
+    0%, 100% { background-color: red }
+    10% { background-color: yellow }
 }
 
 @keyframes fadeInOut {
@@ -17,7 +18,7 @@
   
 
 body {
-    background-color:var(--azulPmfClaro);
+    background-color: var(--brancoPmf);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -39,6 +40,7 @@ body {
     margin-bottom: 25px;
     padding: 5px;
     text-align: center;
+    border: 1px solid black;
 }
 
 .bBox {
@@ -53,13 +55,24 @@ body {
     border-radius: 10px;
     width: 20em;
     height: auto;
-    text-align: start;
+    border: 1px solid black;
+}
 
+#dados {
+    padding-left: 50px;
+    text-align: start;
 }
 
 .alerta {
-    height: 300px;
+    height: 275px;
     width: 300px;
     opacity: 0;
     animation: fadeInOut 1s infinite;
+    color: blue;
+}
+
+mark {
+    background-color: red;
+    padding: auto;
+    font-weight: bold;
 }
