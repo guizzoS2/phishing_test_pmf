@@ -25,7 +25,7 @@
                 if(mysqli_query($mysqli, $sql)) {
                     echo "Cadastrado com sucesso";
                     session_start();
-                    $selectQuery = "SELECT * FROM dados_phishing WHERE visits = $visits AND email = '$userMAIL'";
+                    $selectQuery = "SELECT * FROM dados_phishing WHERE visits = '$visits' AND email = '$userMAIL'";
                     $result = mysqli_query($mysqli, $selectQuery);
 
                     $data = mysqli_fetch_assoc($result);
