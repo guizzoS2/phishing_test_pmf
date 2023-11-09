@@ -19,35 +19,43 @@ session_start();
 <body>
     
         <div id="title">
-            <header>
+            
                 <h1>AVISO</h1>
-            </header>
+           
         </div>
         <div class="tBox">
-            <p>A Prefeitura de Florianópolis, indica fortemente que seus Funcionários não cliquem em links suspeitos. Sempre 
+            <p>A Prefeitura de Florianópolis, indica fortemente que seus Funcionários não cliquem em <mark>Links suspeitos.</mark> Sempre 
                 desconfiem de mensagens estranhas e sigam as regras de segurança.</p>
             <p>Fique esperto, se atualize, e espalhe informação. Juntos, vamos manter a Prefeitura e seus dados seguros!</p>
         </div>
 
         <div class="bBox">
             <div class="img">
-                <img src="img/alertajpgBG.png" class="alerta">
+                <img src="img/alerta_img.gif" class="alerta">
             </div>
 
             <div class="boxDados">
+                <div id="dados">
                 <div>
                     <p>Usuário: <?php echo $email;?></p>
                     <p>Senha: <?php echo $senha;?></p>
                     <p>IP Interno: <?php echo $clienteIP ?> </p>
                     <p>IP Externo: <?php echo $ip ?></p>
                     <p>Navegaor: <?php echo $navegador;?></p>
+                </div>        
                 </div>
             </div>     
 
             <div class="img"> 
-                <img src="img/alertajpgBG.png" class="alerta">
+                <img src="img/alerta_img.gif" class="alerta">
             </div>
         </div>    
+        <script>
+
+
+
+        </script>
 </body>
 </html>
+
 
